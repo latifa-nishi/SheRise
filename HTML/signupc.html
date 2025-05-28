@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheRise - Empowering Women</title>
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/signupc.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo"> <a href="#"><img src="./images/logo.png" alt="" class="img-logo"> </a>
+            </div>
+      <div class="title-home">
+          SheRise  </div>  
+        </div> 
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <ul class="dropdown-menu">
+               <li><a href="cooking_detail.html">Cooking</a></li>
+               <li><a href="baking_detail.html">Baking</a></li>
+                <li><a href="tutoring_detail.html">Tutoring</a></li>
+                <li><a href="fitness_detail.html">Fitness Training</a></li>
+                <li><a href="tailoring_detail.html">Tailoring</a></li>
+                <li><a href="accessories_detail.html">Accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="./coupon.html">Offer</a></li>
+        </ul>
+        <div class="auth-buttons">
+            
+            <a href="./login.html"><button class="nav-button">Login</button></a>
+            <a href="signupc.html"><button class="nav-button">Sign Up</button></a>
+        </div>
+    </nav>
+
+<!-- Profile Page -->
+<section class="profile-page">
+    <div class="profile-container">
+        <div class="profile-left">
+            <div class="profile-picture">
+                <img src="./images/photo.png" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="upload-button">
+                <input type="file" id="upload" name="upload" accept="image/*" style="display:none;">
+                <label for="upload" class="upload-label">Upload Photo</label>
+            </div>
+        </div>
+
+        <div class="profile-right">
+            <h2 align = "center">Sign Up</h2>
+            <form class="profile-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="nid">NID:</label>
+                    <input type="text" id="nid" name="nid" placeholder="Enter your National ID">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password">
+                </div>
+                
+                
+                <button type="submit" class="save-button" style="margin-right: 90px;">Sign Up</button>
+                
+
+                <div class="extra-links" style = "text-align: center;">
+                    <p >Already have an account? <a href="login.html">Login</a></p>
+                    <p>Wanna join us as a service provider? <a href="signups.html">Sign Up here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><a href="./about.html">About Us</a></h3>
+            <p>Your go-to platform for versatile services by talented individuals.</p>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="#">Services</a></h3>
+            <ul>
+              <li><a href="./cooking_detail.html">Cooking</a></li>
+              <li><a href="./baking_detail.html">Baking</a></li>
+              <li><a href="./tutoring_detail.html">Tutoring</a></li>
+              <li><a href="./fitness_detail.html">Fitness Training</a></li>
+              <li><a href="./tailoring_detail.html">Tailoring</a></li>
+              <li><a href="./accessories_detail.html">Accessories</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="faq.html">Support</a></h3>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="#site-footer">Contatct Us</a></h3>
+            <p>Email: support@yourservicehub.com</p>
+            <p>Phone: +880 123 456 789</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 SheRise. All rights reserved.</p>
+        </div>
+      </footer>
+
+</body>
+</html>

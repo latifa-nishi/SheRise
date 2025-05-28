@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheRise - Shopping Cart</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+
+<!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo"> <a href="#"><img src="./images/logo.png" alt="" class="img-logo"> </a>
+            </div>
+      <div class="title-home">
+          SheRise  </div>  
+        </div> 
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <ul class="dropdown-menu">
+               <li><a href="cooking_detail.html">Cooking</a></li>
+               <li><a href="baking_detail.html">Baking</a></li>
+                <li><a href="tutoring_detail.html">Tutoring</a></li>
+                <li><a href="fitness_detail.html">Fitness Training</a></li>
+                <li><a href="tailoring_detail.html">Tailoring</a></li>
+                <li><a href="accessories_detail.html">Accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="./coupon.html">Offer</a></li>
+        </ul>
+        <div class="auth-buttons">
+            
+            <a href="./login.html"><button class="nav-button">Login</button></a>
+            <a href="signupc.html"><button class="nav-button">Sign Up</button></a>
+        </div>
+    </nav>
+
+<div class="cart-container">
+    <!-- Cart Items Section -->
+    <div class="cart-items">
+        <div class="cart-header">
+            <h1 class="cart-title">Your Cart</h1>
+            <a href="cooking_detail.html" class="continue-shopping">
+                <span>Continue Shopping</span>
+                &rarr;
+            </a>
+        </div>
+        
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product/Service</th>
+                    <th>Price</th>
+                    <th class="quantity-header">Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <div class="product-name">Home Cooking Class</div>
+                            <div class="product-category">Cooking Service</div>
+                        </div>
+                    </td>
+                    <td class="currency">৳500</td>
+                    <td class="quantity-cell">
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </td>
+                    <td class="currency">৳500</td>
+                    <td>
+                        <button class="remove-btn" title="Remove item">&times;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <div class="product-name">Custom Cake Order</div>
+                            <div class="product-category">Baking Service</div>
+                        </div>
+                    </td>
+                    <td class="currency">৳1200</td>
+                    <td class="quantity-cell">
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </td>
+                    <td class="currency">৳1200</td>
+                    <td>
+                        <button class="remove-btn" title="Remove item">&times;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <div class="product-name">Math Tutoring Session</div>
+                            <div class="product-category">Tutoring</div>
+                        </div>
+                    </td>
+                    <td class="currency">৳300</td>
+                    <td class="quantity-cell">
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="2" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </td>
+                    <td class="currency">৳600</td>
+                    <td>
+                        <button class="remove-btn" title="Remove item">&times;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <div class="product-name">Personal Training Session</div>
+                            <div class="product-category">Fitness Training</div>
+                        </div>
+                    </td>
+                    <td class="currency">৳400</td>
+                    <td class="quantity-cell">
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </td>
+                    <td class="currency">৳400</td>
+                    <td>
+                        <button class="remove-btn" title="Remove item">&times;</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <div class="product-name">Custom Tailored Shalwar Kameez</div>
+                            <div class="product-category">Tailoring</div>
+                        </div>
+                    </td>
+                    <td class="currency">৳2500</td>
+                    <td class="quantity-cell">
+                        <div class="quantity-control">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </td>
+                    <td class="currency">৳2500</td>
+                    <td>
+                        <button class="remove-btn" title="Remove item">&times;</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Order Summary Section -->
+    <div class="cart-summary">
+        <div class="summary-card">
+            <h2 class="summary-title">Order Summary</h2>
+            
+            <div class="summary-row">
+                <span class="summary-label">Subtotal</span>
+                <span class="summary-value currency">৳5200</span>
+            </div>
+            
+            <div class="summary-row">
+                <span class="summary-label">Delivery Charge</span>
+                <span class="summary-value currency">৳100</span>
+            </div>
+            
+            <div class="summary-row">
+                <span class="summary-label">VAT</span>
+                <span class="summary-value currency">৳260</span>
+            </div>
+            
+            <div class="coupon-input">
+                <input type="text" placeholder="Coupon Code">
+                <button>Apply</button>
+            </div>
+            
+            <div class="summary-row total-row">
+                <span>Total</span>
+                <span class="currency">৳5560</span>
+            </div>
+            
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><a href="about.html">About Us</a></h3>
+            <p>Your go-to platform for versatile services by talented individuals.</p>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="#">Services</a></h3>
+            <ul>
+              <li><a href="cooking_detail.html">Cooking</a></li>
+              <li><a href="baking_detail.html">Baking</a></li>
+              <li><a href="tutoring_detail.html">Tutoring</a></li>
+              <li><a href="fitness_detail.html">Fitness Training</a></li>
+              <li><a href="tailoring_detail.html">Tailoring</a></li>
+              <li><a href="accessories_detail.html">Accessories</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="faq.html">Support</a></h3>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="#site-footer">Contatct Us</a></h3>
+            <p>Email: support@yourservicehub.com</p>
+            <p>Phone: +880 123 456 789</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 SheRise. All rights reserved.</p>
+        </div>
+      </footer>
+
+</body>
+</html>

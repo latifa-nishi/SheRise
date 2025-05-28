@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Orders - SheRise</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./css/order.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">
+        <a href="#"><img src="./images/logo.jpg" alt="SheRise Logo" class="img-logo"></a>
+      </div>
+      <div class="title-home">SheRise</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="cooking_detail.html">Cooking</a></li>
+          <li><a href="baking_detail.html">Baking</a></li>
+          <li><a href="tutoring_detail.html">Tutoring</a></li>
+          <li><a href="fitness_detail.html">Fitness Training</a></li>
+          <li><a href="tailoring_detail.html">Tailoring</a></li>
+          <li><a href="accessories_detail.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="coupon.html">Offer</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="login.html"><button class="nav-button">Login</button></a>
+      <a href="signupc.html"><button class="nav-button">Sign Up</button></a>
+    </div>
+  </nav>
+
+ <!-- ORDER LIST SECTION -->
+  <section class="staff-orders">
+    <h2>Order List</h2>
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search orders...">
+      <button onclick="searchOrders()">Search</button>
+    </div>
+
+    <!-- Order Table -->
+    <table class="orders-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer Name</th>
+          <th>Service Type</th>
+          <th>Order Date</th>
+          <th>Payment Method</th>
+          <th>Total Payment</th>
+          <th>Location</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Aisha Rahman</td>
+          <td>Cake</td>
+          <td>2025-05-15</td>
+          <td>Credit Card</td>
+          <td>$50</td>
+          <td>Dhaka, Bangladesh</td>
+          <td><span class="status completed">Completed</span></td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Ali Khan</td>
+          <td>Cookies</td>
+          <td>2025-05-12</td>
+          <td>PayPal</td>
+          <td>$30</td>
+          <td>Chittagong, Bangladesh</td>
+          <td><span class="status in-progress">In Progress</span></td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Sarah Ahmed</td>
+          <td>Apple Pie</td>
+          <td>2025-05-10</td>
+          <td>Cash</td>
+          <td>$25</td>
+          <td>Dhaka, Bangladesh</td>
+          <td><span class="status pending">Pending</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- APPROVAL REQUESTS SECTION -->
+  <section class="approval-requests">
+    <h2>Incoming Requests</h2>
+    <table class="requests-table">
+      <thead>
+        <tr>
+          <th>Request ID</th>
+          <th>Customer Name</th>
+          <th>Service Type</th>
+          <th>Delivery Date</th>
+          <th>Payment Method</th>
+          <th>Total Payment</th>
+          <th>Location</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>004</td>
+          <td>Sadia Khan</td>
+          <td>Baking</td>
+          <td>2025-06-02</td>
+          <td>Credit Card</td>
+          <td>$45</td>
+          <td>Dhaka, Bangladesh</td>
+          <td>
+            <button class="approve-btn">Approve</button>
+            <button class="reject-btn">Reject</button>
+          </td>
+        </tr>
+        <tr>
+          <td>005</td>
+          <td>Rahim Uddin</td>
+          <td>Cooking</td>
+          <td>2025-06-04</td>
+          <td>Cash</td>
+          <td>$35</td>
+          <td>Dhaka, Bangladesh</td>
+          <td>
+            <button class="approve-btn">Approve</button>
+            <button class="reject-btn">Reject</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- REVIEW SECTION FOR COMPLETED ORDERS -->
+<section class="order-reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review-container">
+    <div class="review-card">
+      <div class="review-info">
+        <img src="./images/reviewer.jpg" alt="Reviewer" class="reviewer-img">
+        <h3 class="reviewer-name">Aisha Rahman</h3>
+        <p class="review-rate">★★★★★</p>
+      </div>
+      <p class="review-text">Absolutely fantastic service! The cake was beautifully designed and tasted amazing.</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-info">
+        <img src="./images/revewier1.jpg" alt="Reviewer" class="reviewer-img">
+        <h3 class="reviewer-name">Nila Haque</h3>
+        <p class="review-rate">★★★★☆</p>
+      </div>
+      <p class="review-text">Fitness training was great! Could improve flexibility in scheduling.</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-info">
+        <img src="./images/photo.png" alt="Reviewer" class="reviewer-img">
+        <h3 class="reviewer-name">Sarah Ahmed</h3>
+        <p class="review-rate">★★★★★</p>
+      </div>
+      <p class="review-text">Delicious cooking session! I learned so much. Highly recommend.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><a href="about.html">About Us</a></h3>
+        <p>Your go-to platform for versatile services by talented individuals.</p>
+      </div>
+      <div class="footer-section">
+        <h3><a href="services.html">Services</a></h3>
+        <ul>
+          <li><a href="cooking.html">Cooking</a></li>
+          <li><a href="baking.html">Baking</a></li>
+          <li><a href="tutoring.html">Tutoring</a></li>
+          <li><a href="fitness.html">Fitness Training</a></li>
+          <li><a href="tailoring.html">Tailoring</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3><a href="faq.html">Support</a></h3>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3><a href="#site-footer">Contact Us</a></h3>
+        <p>Email: support@yourservicehub.com</p>
+        <p>Phone: +880 123 456 789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SheRise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Searching Orders -->
+  <script>
+    function searchOrders() {
+      let searchTerm = document.getElementById("search").value.toLowerCase();
+      let rows = document.querySelectorAll(".orders-table tbody tr");
+
+      rows.forEach(row => {
+        let rowText = row.innerText.toLowerCase();
+        row.style.display = rowText.includes(searchTerm) ? "" : "none";
+      });
+    }
+  </script>
+
+</body>
+</html>

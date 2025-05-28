@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Profile - SheRise</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">
+        <a href="#"><img src="./images/logo.jpg" alt="SheRise Logo" class="img-logo"></a>
+      </div>
+      <div class="title-home">SheRise</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="cooking_detail.html">Cooking</a></li>
+          <li><a href="baking_detail.html">Baking</a></li>
+          <li><a href="tutoring_detail.html">Tutoring</a></li>
+          <li><a href="fitness_detail.html">Fitness Training</a></li>
+          <li><a href="tailoring_detail.html">Tailoring</a></li>
+          <li><a href="accessories_detail.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li><a href="coupon.html">Offer</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="login.html"><button class="nav-button">Login</button></a>
+      <a href="signupc.html"><button class="nav-button">Sign Up</button></a>
+    </div>
+  </nav>
+
+  <!-- CUSTOMER PROFILE -->
+  <section class="customer-profile">
+    <h2>Personal Information</h2>
+
+    <div class="profile-container">
+      <!-- Profile Picture & History -->
+      <div class="top-section">
+        <div class="profile-pic">
+          <label for="profileImage">
+            <img src="./images/pic.jpg" alt="Customer Picture">
+          </label>
+          <input type="file" id="profileImage" name="profileImage" accept="image/*" style="display:none;">
+        </div>
+
+        <div class="history-link">
+          <a href="history.html">Purchase History</a>
+        </div>
+      </div>
+
+      <!-- Profile Details -->
+      <div class="profile-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="nid">NID</label>
+        <input type="text" id="nid" name="nid" placeholder="Enter your NID number">
+
+        <label for="password">Update Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter new password">
+
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm new password">
+
+        <button class="save-button">Save Changes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><a href="about.html">About Us</a></h3>
+        <p>Your go-to platform for versatile services by talented individuals.</p>
+      </div>
+      <div class="footer-section">
+        <h3><a href="services.html">Services</a></h3>
+        <ul>
+          <li><a href="cooking.html">Cooking</a></li>
+          <li><a href="baking.html">Baking</a></li>
+          <li><a href="tutoring.html">Tutoring</a></li>
+          <li><a href="fitness.html">Fitness Training</a></li>
+          <li><a href="tailoring.html">Tailoring</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3><a href="faq.html">Support</a></h3>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3><a href="#site-footer">Contact Us</a></h3>
+        <p>Email: support@yourservicehub.com</p>
+        <p>Phone: +880 123 456 789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 SheRise. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

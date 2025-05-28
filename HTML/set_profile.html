@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Setup - SheRise</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/set_profile.css" />
+  </head>
+<body>
+  <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo"> <a href="#"><img src="./images/logo.png" alt="" class="img-logo"> </a>
+            </div>
+      <div class="title-home">
+          SheRise  </div>  
+        </div> 
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <ul class="dropdown-menu">
+               <li><a href="cooking_detail.html">Cooking</a></li>
+               <li><a href="baking_detail.html">Baking</a></li>
+                <li><a href="tutoring_detail.html">Tutoring</a></li>
+                <li><a href="fitness_detail.html">Fitness Training</a></li>
+                <li><a href="tailoring_detail.html">Tailoring</a></li>
+                <li><a href="accessories_detail.html">Accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="./coupon.html">Offer</a></li>
+        </ul>
+        <div class="auth-buttons">
+            
+            <a href="./login.html"><button class="nav-button">Login</button></a>
+            <a href="signupc.html"><button class="nav-button">Sign Up</button></a>
+        </div>
+    </nav>
+
+  <!-- PAGE HEADING -->
+  <header class="page-heading">
+    <h2>Staff Profile Setup</h2>
+    <p>Customize your profile and showcase your expertise</p>
+  </header>
+
+  <!-- PROFILE SETUP FORM -->
+  <section class="profile-setup">
+    <h2>Set Up Your Profile</h2>
+    <form class="profile-setup-form" action="#" method="post" enctype="multipart/form-data" onsubmit="return validateForm();">
+
+      <!-- Basic Information Container -->
+      <div class="setup-section basic-info">
+        <h3>Basic Information</h3>
+        <!-- Clickable photo to upload profile picture -->
+        <div class="photo-upload">
+          <label for="profilePic">
+            <!-- Default avatar placeholder -->
+            <img src="./images/photo.png" alt="Upload your photo" class="upload-photo">
+          </label>
+          <input type="file" id="profilePic" name="profilePic" accept="image/*" style="display:none;">
+        </div>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+        
+        <label for="profession">Profession / Title</label>
+        <select id="profession" name="profession" required>
+          <option value="">Select Profession</option>
+          <option value="Cooking">Cooking</option>
+          <option value="Baking">Baking</option>
+          <option value="Tutoring">Tutoring</option>
+          <option value="Fitness Training">Fitness Training</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Tailoring">Tailoring</option>
+        </select>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+        <span id="emailError" class="error"></span>
+      </div>
+
+      <!-- About Section Container -->
+      <div class="setup-section about-section">
+        <h3>About You</h3>
+        <label for="about">Biography</label>
+        <textarea id="about" name="about" rows="5" placeholder="Tell us about yourself..."></textarea>
+      </div>
+
+      <!-- Work Media Container -->
+      <div class="setup-section work-media">
+        <h3>Work Portfolio</h3>
+        <label for="workMedia">
+          <!-- Placeholder for work media upload -->
+          <img src="./images/upload.jpg" alt="Upload your work" class="upload-media">
+        </label>
+        <input type="file" id="workMedia" name="workMedia" accept="image/*,video/*" style="display:none;">
+        <p class="upload-instruction">Click the image to upload a photo or video of your work</p>
+      </div>
+
+      <!-- Additional Information Container -->
+      <div class="setup-section additional-info">
+        <h3>Additional Information</h3>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+        <span id="phoneError" class="error"></span>
+        
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" placeholder="City, Country">
+        
+        <label for="languages">Languages Spoken</label>
+        <input type="text" id="languages" name="languages" placeholder="E.g., English, Bengali">
+        
+        <label for="education">Education</label>
+        <input type="text" id="education" name="education" placeholder="Your educational background">
+        
+        <label for="rate">Your Rate ($/hr)</label>
+        <input type="number" id="rate" name="rate" placeholder="e.g., 40" min="0">
+        
+        <label for="responseTime">Avg. Response Time</label>
+        <input type="text" id="responseTime" name="responseTime" placeholder="e.g., Within 4 hours">
+        
+        <label for="portfolio">Portfolio URL</label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="Your portfolio link">
+      </div>
+      
+      <div class="setup-submit">
+        <button type="submit" class="submit-button">Save Profile</button>
+      </div>  
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3><a href="./about.html">About Us</a></h3>
+        <p>Your go-to platform for versatile services by talented individuals.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3><a href="services.html">Services</a></h3>
+        <ul>
+              <li><a href="cooking_detail.html">Cooking</a></li>
+              <li><a href="baking_detail.html">Baking</a></li>
+              <li><a href="tutoring_detail.html">Tutoring</a></li>
+              <li><a href="fitness_detail.html">Fitness Training</a></li>
+              <li><a href="tailoring_detail.html">Tailoring</a></li>
+              <li><a href="accessories_detail.html">Accessories</a></li>
+            </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3><a href="faq.html">Support</a></h3>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3><a href="#site-footer">Contact Us</a></h3>
+        <p>Email: support@yourservicehub.com</p>
+        <p>Phone: +880 123 456 789</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 SheRise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function setError(id, message) {
+      const errorElement = document.getElementById(id + "Error");
+      if (errorElement) {
+        errorElement.innerText = message;
+      }
+    }
+
+    function checkEmail() {
+      const email = document.getElementById("email").value.trim();
+      const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (email === "") {
+        setError("email", "Please enter an email address.");
+        return false;
+      } else if (!pattern.test(email)) {
+        setError("email", "Invalid email address.");
+        return false;
+      } else {
+        setError("email", "");
+        return true;
+      }
+    }
+
+    function checkPhone() {
+      const phone = document.getElementById("phone").value.trim();
+      const pattern = /^[0-9+\-\s()]+$/;
+      if (phone === "") {
+        setError("phone", "Please enter a phone number.");
+        return false;
+      } else if (!pattern.test(phone)) {
+        setError("phone", "Invalid phone number.");
+        return false;
+      } else {
+        setError("phone", "");
+        return true;
+      }
+    }
+
+    function validateForm() {
+      let valid = true;
+      if (!checkEmail()) {
+        valid = false;
+      }
+      if (!checkPhone()) {
+        valid = false;
+      }
+      return valid;
+    }
+  </script>
+</body>
+</html>

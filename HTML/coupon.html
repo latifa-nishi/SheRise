@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusive Coupons - SheRise</title>
+  <!-- Google Fonts (Poppins & Pacifico) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/coupon.css" />
+</head>
+<body>
+  <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo"> <a href="#"><img src="./images/logo.png" alt="" class="img-logo"> </a>
+            </div>
+      <div class="title-home">
+          SheRise  </div>  
+        </div> 
+        <ul class="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <ul class="dropdown-menu">
+               <li><a href="cooking_detail.html">Cooking</a></li>
+               <li><a href="baking_detail.html">Baking</a></li>
+                <li><a href="tutoring_detail.html">Tutoring</a></li>
+                <li><a href="fitness_detail.html">Fitness Training</a></li>
+                <li><a href="tailoring_detail.html">Tailoring</a></li>
+                <li><a href="accessories_detail.html">Accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="./coupon.html">Offer</a></li>
+        </ul>
+        <div class="auth-buttons">
+            
+            <a href="./login.html"><button class="nav-button">Login</button></a>
+            <a href="signupc.html"><button class="nav-button">Sign Up</button></a>
+        </div>
+    </nav>
+  
+  <!-- COUPON CATEGORIES -->
+
+  <!-- Cooking Coupons -->
+  <section class="coupon-category">
+    <h2>Cooking Coupons</h2>
+    <div class="coupon-grid">
+      <!-- Coupon Card 1 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>10% OFF</h3>
+          <p>Cooking Classes</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>COOK10</span>
+            <button onclick="copyCouponCode('COOK10', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: November 30, 2025</p>
+          <p class="coupon-terms">* One-time use only.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+      <!-- Coupon Card 2 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>Free Recipe Book</h3>
+          <p>With every class</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>COOKFREE</span>
+            <button onclick="copyCouponCode('COOKFREE', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: December 15, 2025</p>
+          <p class="coupon-terms">* Available on booking classes only.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+      <!-- Coupon Card 3 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>Buy 1 Get 1</h3>
+          <p>Free Session</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>COOKBOGO</span>
+            <button onclick="copyCouponCode('COOKBOGO', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: January 15, 2026</p>
+          <p class="coupon-terms">* Limit 1 per customer.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Baking Coupons -->
+  <section class="coupon-category">
+    <h2>Baking Coupons</h2>
+    <div class="coupon-grid">
+      <!-- Coupon Card 1 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>15% OFF</h3>
+          <p>On Baking Courses</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>BAKE15</span>
+            <button onclick="copyCouponCode('BAKE15', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: October 31, 2025</p>
+          <p class="coupon-terms">* Use on baking courses only.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+      <!-- Coupon Card 2 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>$10 OFF</h3>
+          <p>on Cake Orders</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>CAKE10</span>
+            <button onclick="copyCouponCode('CAKE10', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: December 5, 2025</p>
+          <p class="coupon-terms">* Minimum order of $50.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+      <!-- Coupon Card 3 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>Free Cupcakes</h3>
+          <p>with every order</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>BAKEFREE</span>
+            <button onclick="copyCouponCode('BAKEFREE', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: November 15, 2025</p>
+          <p class="coupon-terms">* One per customer.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exclusive Coupons -->
+  <section class="coupon-category">
+    <h2>Exclusive Coupons</h2>
+    <div class="coupon-grid">
+      <!-- Coupon Card 1 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>20% OFF</h3>
+          <p>Exclusive Offer</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>SHE20EX</span>
+            <button onclick="copyCouponCode('SHE20EX', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: December 31, 2025</p>
+          <p class="coupon-terms">* Use at checkout. Limited availability.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+      <!-- Coupon Card 2 -->
+      <div class="coupon-card">
+        <div class="coupon-header">
+          <h3>Buy 2 Get 1 Free</h3>
+          <p>Exclusive Baking Deal</p>
+        </div>
+        <div class="coupon-body">
+          <div class="coupon-code">
+            <span>SHEB2G1</span>
+            <button onclick="copyCouponCode('SHEB2G1', this)">Copy Code</button>
+          </div>
+          <p class="coupon-validity">Valid until: January 31, 2026</p>
+          <p class="coupon-terms">* One-time use only.</p>
+        </div>
+        <div class="coupon-footer">
+          <button class="redeem-button">Redeem Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3><a href="./about.html">About Us</a></h3>
+            <p>Your go-to platform for versatile services by talented individuals.</p>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="#">Services</a></h3>
+            <ul>
+              <li><a href="./cooking_detail.html">Cooking</a></li>
+              <li><a href="./baking_detail.html">Baking</a></li>
+              <li><a href="./tutoring_detail.html">Tutoring</a></li>
+              <li><a href="./fitness_detail.html">Fitness Training</a></li>
+              <li><a href="./tailoring_detail.html">Tailoring</a></li>
+              <li><a href="./accessories_detail.html">Accessories</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="faq.html">Support</a></h3>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-section">
+            <h3><a href="#site-footer">Contatct Us</a></h3>
+            <p>Email: support@yourservicehub.com</p>
+            <p>Phone: +880 123 456 789</p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 SheRise. All rights reserved.</p>
+        </div>
+      </footer>
+
+  <!-- JavaScript for copying coupon codes -->
+  <script>
+    function copyCouponCode(code, btn) {
+      navigator.clipboard.writeText(code)
+        .then(() => {
+          btn.innerText = "Copied!";
+          setTimeout(() => {
+            btn.innerText = "Copy Code";
+          }, 2000);
+        })
+        .catch(err => {
+          alert("Failed to copy coupon code");
+        });
+    }
+  </script>
+</body>
+</html>
