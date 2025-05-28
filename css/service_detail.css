@@ -1,0 +1,340 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  a {
+  text-decoration: none;
+  }
+  
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #FFF0F5; /* soft lavender blush */
+  color: #3B2F63; /* deep plum */
+  line-height: 1.6;
+  }
+
+
+/* Navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0px 20px;
+background: #fff;
+position: sticky;
+z-index: 100;
+top: 0;
+border-bottom: solid #b0b0b0 1px;
+}
+
+.nav-left {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0;
+}
+
+.title-home {
+font-size: 24px;
+font-weight: bold;
+color: #a663cc; 
+font-family: "Pacifico", cursive;
+}
+
+.img-logo {
+width: 100px;
+height: 80px;
+border-radius: 15%;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 60px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #3B2F63;
+font-weight: bold;
+}
+
+.dropdown {
+position: relative;
+}
+
+.dropdown-menu {
+display: none;
+position: absolute;
+background: white;
+left: 0;
+list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.auth-buttons button {
+margin-left: 10px;
+padding: 10px 20px;
+border: none;
+background-color: #7F4B8B; /* royal purple */
+color: white;
+cursor: pointer;
+border-radius: 5px;
+}
+
+
+
+.nav-button {
+font-size: 15px;
+}
+
+
+
+.provider-card {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .service-card:hover,
+  .provider-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Filter section styles */
+  .filter-section {
+    background-color: #fff7f8;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .filter-section select {
+    border-radius: 5px;
+  }
+
+  .filter-section button {
+    background-color: #e26e94;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+  }
+
+  .filter-section button:hover {
+    background-color: #d75984;
+  }
+
+  /* Hero banner styles */
+ 
+
+  .hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 110, 148, 0.4);
+    z-index: 0;
+  }
+
+  .hero-banner .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Sub-services card styles */
+  .sub-services .card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    border: 2px solid #f2f2f2;
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .sub-services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #e26e94;
+  }
+
+  .sub-services .card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  .sub-services h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .sub-services p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  /* Hide video by default */
+  .video-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .video {
+    width: 100%;
+    height: 200px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .service-card:hover .video {
+    opacity: 1;
+  }
+/* 
+<iframe class="video" 
+        src="https://www.youtube.com/embed/mr1KMPYo-bs?autoplay=1&mute=1&start=0&end=5&controls=0&rel=0&modestbranding=1&showinfo=0" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+</iframe>
+
+*/
+
+
+/* Footer */
+.site-footer {
+    background-color: #4c2b63;
+    color: #fff;
+    padding: 40px 30px ;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    flex: 1 ;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffc8ec;
+  }
+  
+  .footer-section a {
+    color: #f1e9f4;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  
+  .footer-section a:hover {
+    color: #ffb6e1;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #e1d9e9;
+  }
+  
+
+
+  /* 
+  
+  <!-- Provider 1 -->
+                <div class="col-md-4">
+                  <div class="card provider-card p-3">
+                    <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-2" width="60" alt="Provider">
+                    <h6>Razia Sultana</h6>
+                    <small>★★★★★ (4.7)</small>
+                    <p>Specializes in authentic Bengali dishes | Available in Mirpur, Dhaka</p>
+                    <button class="btn btn-sm btn-outline-primary">Book Now</button>
+                  </div>
+                </div>
+          
+                <!-- Provider 2 -->
+                <div class="col-md-4">
+                  <div class="card provider-card p-3">
+                    <img src="https://randomuser.me/api/portraits/women/30.jpg" class="rounded-circle mb-2" width="60" alt="Provider">
+                    <h6>Meem Hasan</h6>
+                    <small>★★★★☆ (4.6)</small>
+                    <p>Known for her exquisite biryanis & kebabs | Available in Uttara, Dhaka</p>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                  </div>
+                </div>
+          
+                <!-- Provider 3 -->
+                <div class="col-md-4">
+                  <div class="card provider-card p-3">
+                    <img src="https://randomuser.me/api/portraits/women/50.jpg" class="rounded-circle mb-2" width="60" alt="Provider">
+                    <h6>Hena Begum</h6>
+                    <small>★★★★☆ (4.4)</small>
+                    <p>Expert in desserts and traditional sweets | Available in Banani, Dhaka</p>
+                    <button class="btn btn-sm btn-outline-primary">Book Now</button>
+                  </div>
+                </div>
+          
+                <!-- Provider 4 -->
+                <div class="col-md-4">
+                  <div class="card provider-card p-3">
+                    <img src="https://randomuser.me/api/portraits/women/23.jpg" class="rounded-circle mb-2" width="60" alt="Provider">
+                    <h6>Ayesha Sadiya</h6>
+                    <small>★★★★★ (4.8)</small>
+                    <p>Expert in fusion and international cuisines | Available in Banani, Dhaka</p>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                  </div>
+                </div>
+          
+                <!-- Provider 5 -->
+                <div class="col-md-4">
+                  <div class="card provider-card p-3">
+                    <img src="https://randomuser.me/api/portraits/women/26.jpg" class="rounded-circle mb-2" width="60" alt="Provider">
+                    <h6>Simran Khatun</h6>
+                    <small>★★★★★ (5.0)</small>
+                    <p>Specializes in vegan and vegetarian dishes | Available in Uttara, Dhaka</p>
+                    <button class="btn btn-sm btn-outline-primary">Book Now</button>
+                  </div>
+                </div>
+          
+                <!-- Provider 6 -->
+                <div class="col-md-4">
+                  <div class="card provider-card p-3">
+                    <img src="https://randomuser.me/api/portraits/women/55.jpg" class="rounded-circle mb-2" width="60" alt="Provider">
+                    <h6>Sonia Rahman</h6>
+                    <small>★★★★★ (4.9)</small>
+                    <p>Known for her mouthwatering soups & stews | Available in Mirpur, Dhaka</p>
+                    <button class="btn btn-sm btn-outline-primary">View Details</button>
+                  </div>
+                </div> -->
+  */
